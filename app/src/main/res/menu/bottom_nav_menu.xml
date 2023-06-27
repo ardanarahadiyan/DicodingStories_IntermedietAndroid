@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bnmHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/bnmAddStory"
+        android:icon="@drawable/ic_addphoto"
+        android:title="@string/add_story" />
+
+    <item
+        android:id="@+id/bnmMap"
+        android:icon="@drawable/ic_map"
+        android:title="@string/maps" />
+
+</menu>

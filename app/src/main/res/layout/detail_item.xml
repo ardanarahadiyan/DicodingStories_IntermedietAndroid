@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="100dp" />
+
+    <TextView
+        android:id="@+id/tvTitleLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_link"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvDetailLink"
+        app:layout_constraintTop_toTopOf="@id/tvDetailLink"
+        app:layout_constraintBottom_toBottomOf="@id/tvDetailLink"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDetailLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_url"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDetailTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/dummy_time"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailLink"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailLink"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLink" />
+
+    <TextView
+        android:id="@+id/tvTitleCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/created_at"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDetailTime"
+        app:layout_constraintEnd_toStartOf="@+id/tvDetailTime"
+        app:layout_constraintTop_toTopOf="@+id/tvDetailTime" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetailLat"
+        android:text="@string/dummy_latlon"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailTime"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailTime"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailTime" />
+
+    <TextView
+        android:id="@+id/tvTitleLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tvDetailLat"
+        app:layout_constraintTop_toTopOf="@id/tvDetailLat"
+        app:layout_constraintBottom_toBottomOf="@id/tvDetailLat"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetailLon"
+        android:text="@string/dummy_latlon"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailLat"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailLat"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLat"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitleLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tvDetailLon"
+        app:layout_constraintTop_toTopOf="@id/tvDetailLon"
+        app:layout_constraintBottom_toBottomOf="@id/tvDetailLon"
+        android:layout_marginEnd="8dp"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
